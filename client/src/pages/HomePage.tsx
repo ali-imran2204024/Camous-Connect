@@ -7,31 +7,43 @@ const modules = [
     title: 'Club Programs',
     description: 'Discover clubs, join events, volunteer, and manage registrations from one place.',
     badge: 'Community',
+    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Jobs & Internships',
     description: 'Browse curated opportunities with deadlines, filters, and direct application links.',
     badge: 'Career',
+    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Scholarships & Research',
     description: 'Explore funding, research roles, TA and RA opportunities for students.',
     badge: 'Academics',
+    image: 'https://images.unsplash.com/photo-1559757175-57004f4ff736?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Emergency Services',
     description: 'Fast access to medical schedules, blood donation drives, and emergency contacts.',
     badge: 'Support',
+    image: 'https://images.unsplash.com/photo-1584467735874-8cb0863ed818?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'Transport',
     description: 'Track routes, schedules, notices, and future-ready transport updates.',
     badge: 'Mobility',
+    image: 'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=900&q=80',
   },
   {
     title: 'News & Updates',
     description: 'Stay current with announcements, university news, and club notices.',
     badge: 'Updates',
+    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=80',
+  },
+  {
+    title: 'Nation & Inter university event',
+    description: 'Discover national and inter-university events, competitions, and collaboration opportunities.',
+    badge: 'Events',
+    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80',
   },
 ];
 
