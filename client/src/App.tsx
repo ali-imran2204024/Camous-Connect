@@ -2,6 +2,8 @@ import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import logo from '../../logo.png';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import ClubEventsPage from './pages/ClubEventsPage';
+import EventDetailPage from './pages/EventDetailPage';
 import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
@@ -49,6 +51,8 @@ function AppShell() {
         <Route element={<MainLayout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/club-events" element={<ClubEventsPage />} />
+          <Route path="/event/:eventId" element={<EventDetailPage />} />
           <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
         </Route>
 

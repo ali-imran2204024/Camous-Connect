@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FaBell, FaBriefcase, FaBus, FaGraduationCap, FaHeartbeat } from 'react-icons/fa';
 import overviewImage from '../../../Details overview.png';
 import SectionCard from '../components/ui/SectionCard';
@@ -101,7 +102,13 @@ const HomePage = () => {
         </div>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {modules.map((module) => (
-            <SectionCard key={module.title} title={module.title} description={module.description} badge={module.badge} />
+            <Link
+              key={module.title}
+              to={module.title === 'Club Programs' ? '/club-events' : '#'}
+              className="group block"
+            >
+              <SectionCard title={module.title} description={module.description} badge={module.badge} image={module.image} />
+            </Link>
           ))}
         </div>
       </section>
