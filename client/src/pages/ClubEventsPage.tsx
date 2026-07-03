@@ -7,7 +7,7 @@ export const events = [
     club: 'Computer Club',
     date: 'June 15, 2026',
     time: '10:00 AM - 3:00 PM',
-    venue: 'Innovation Hall',
+    venue: 'CSE Building ',
     registrationDeadline: 'June 10, 2026',
     description: 'Join us for an exciting programming contest where you can showcase your coding skills and compete with peers. Various difficulty levels available for all participants.',
   },
@@ -103,3 +103,4 @@ const ClubEventsPage = () => {
 };
 
 export default ClubEventsPage;
+ 
