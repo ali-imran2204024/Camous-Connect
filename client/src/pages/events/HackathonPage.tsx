@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
 
-const HackathonPage = () => {
+const ProgrammingContestPage = () => {
   return (
     <div className="space-y-12 py-12">
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-5xl font-black text-[#f59e0b]">Campus Hackathon</h1>
-          <p className="mt-2 text-xl text-[#6b7280]">24 Hours of Innovation & Collaboration</p>
+          <h1 className="text-5xl font-black text-[coral]">Campus Hackathon</h1>
+          <p className="mt-2 text-2xl font-bold text-[black]">24 Hours of Innovation & Collaboration</p>
         </div>
         <Link
           to="/club-events"
-          className="inline-flex items-center justify-center rounded-full border border-[#f59e0b] bg-white px-6 py-2.5 text-sm font-semibold text-[#f59e0b] transition hover:bg-amber-50"
+          className="inline-flex items-center justify-center rounded-full border border-[black] bg-white px-9 py-2.5 text-xl font-bold text-[coral] transition hover:bg-orange -50"
         >
           ← Back
         </Link>
@@ -21,188 +21,192 @@ const HackathonPage = () => {
         {/* Main Content */}
         <div className="lg:col-span-2 space-y-8">
           {/* Event Card */}
-          <div className="rounded-2xl border border-[#fcd34d] bg-gradient-to-br from-amber-50 to-white p-8 shadow-lg">
-            <div className="mb-6 border-b border-[#f59e0b] pb-6">
-              <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Organized by</p>
-              <p className="mt-2 text-3xl font-bold text-[#f59e0b]">Robotics Club</p>
+          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
+            <div className="mb-6 border-b border-[#e5e7eb] pb-6">
+              <p className="text-xl font-bold  tracking-wider text-[black]">Organized by</p>
+              <p className="mt-2 text-4xl font-bold text-[#1e3a8a]">Robotics Club</p>
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Date</p>
-                <p className="mt-2 text-xl font-bold text-[#111827]">July 1, 2026</p>
+                <p className="text-xl font-semibold  tracking-wider text-[black]">Date</p>
+                <p className="mt-2 text-2xl font-bold text-[Red]">July 1, 2026</p>
               </div>
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Time</p>
-                <p className="mt-2 text-xl font-bold text-[#111827]">9:00 AM - 8:00 PM</p>
+                <p className="text-xl font-semibold  tracking-wider text-[black]">Time</p>
+                <p className="mt-2 text-2xl font-bold text-[red]">09:00 AM - 06:00 PM</p>
               </div>
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Venue</p>
-                <p className="mt-2 text-xl font-bold text-[#111827]">Innovation Hub</p>
+                <p className="text-xl font-semibold  tracking-wider text-[black]">Venue</p>
+                <p className="mt-2 text-2xl font-bold text-[red]">CUET IT Incubator</p>
               </div>
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Registration Deadline</p>
-                <p className="mt-2 text-xl font-bold text-[#111827]">June 25, 2026</p>
+                <p className="text-xl font-semibold  tracking-wider text-[black]">Registration Deadline</p>
+                <p className="mt-2 text-2xl font-bold text-[red]">June 20, 2026</p>
               </div>
             </div>
           </div>
 
           {/* Description */}
           <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-[#111827]">What is the Hackathon?</h2>
-            <p className="mt-4 leading-relaxed text-[#4b5563]">
-              A full-day hackathon event where teams collaborate to build innovative solutions to real-world problems. 
-              Prizes, mentorship, and networking opportunities await all participants. Whether you're a beginner or an 
-              experienced developer, there's something for everyone. Learn from industry experts, meet like-minded innovators, 
-              and showcase your creativity!
+            <h2 className="text-3xl font-bold text-[#1e3a8a]">About This Event</h2>
+            <p className="mt-4 leading-relaxed  text-xl font-semibold text-[black]">
+              A full-day hackathon event where teams collaborate to build innovative solutions to real-
+world problems. Prizes, mentorship, and networking opportunities await all participants.
+Whether you're a beginner or an experienced developer, there's something for everyone.
+Learn from industry experts, meet like-minded innovators, and showcase your creativity!
             </p>
           </div>
 
-          {/* Schedule */}
+          {/* Contest Details */}
           <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-[#111827]">Event Schedule</h2>
+            <h2 className="text-3xl font-bold text-[#1e3a8a]">Contest Format</h2>
+            <ul className="mt-6 space-y-4">
+              <li className="flex gap-3">
+                <span className="text-xl">🏆</span>
+                <div>
+                  <p className="font-bold text-xl text-[#111827]">Contest Type</p>
+                  <p className=" font-semibold text-xl text-[Crimson]">Team-wise </p>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-xl">👥</span>
+                <div>
+                  <p className="font-bold text-xl text-[#111827]">Team Size</p>
+                  <p className=" font-semibold text-xl text-[Crimson]">Maximum 3 Members</p>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-xl">💻</span>
+                <div>
+                  <p className="font-bold text-xl text-[#111827]">Platform</p>
+                  <p className=" font-semibold text-xl text-[Crimson]">Offline Venue </p>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-xl">⏱</span>
+                <div>
+                  <p className="font-bold text-xl text-[#111827]">Duration</p>
+                  <p className=" font-semibold text-xl text-[Crimson]">9 Hours</p>
+                </div>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-xl">📝</span>
+                <div>
+                  <p className="font-bold text-xl text-[#111827]">Number of Problems</p>
+                  <p className=" font-semibold text-xl text-[Crimson]">1 or 2</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+            
+             {/* Schedule */}
+          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
+            <h2 className="text-3xl font-bold text-[#1e3a8a]">Event Schedule</h2>
             <div className="mt-6 space-y-4">
               <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
-                <div className="font-semibold text-[#f59e0b]">09:00</div>
+                <div className="font-bold  text-2xl text-[red]">09:00</div>
                 <div>
-                  <p className="font-semibold text-[#111827]">Registration & Breakfast</p>
-                  <p className="text-sm text-[#6b7280]">Check-in and meet other participants</p>
+                  <p className="font-bold text-xl text-[black]">Event start</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Check-in and start the battle</p>
+                </div>
+              </div>
+              
+              <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
+                <div className="font-bold  text-2xl text-[red]">01:00</div>
+                <div>
+                  <p className="font-bold text-xl text-[black]">Lunch Break</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Receive your lunch showing token from booth</p>
+                </div>
+              </div>
+             <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
+                <div className="font-bold  text-2xl text-[red]">02:00</div>
+                <div>
+                  <p className="font-bold text-xl text-[black]">Hackathon resume</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Restart battle after Lunch</p>
                 </div>
               </div>
               <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
-                <div className="font-semibold text-[#f59e0b]">10:00</div>
+                <div className="font-bold  text-2xl text-[red]">04:00</div>
                 <div>
-                  <p className="font-semibold text-[#111827]">Kickoff & Problem Statements</p>
-                  <p className="text-sm text-[#6b7280]">Introduction and theme announcement</p>
+                  <p className="font-bold text-xl text-[black]">Submission Deadline</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Final submissions required</p>
                 </div>
               </div>
               <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
-                <div className="font-semibold text-[#f59e0b]">10:30</div>
+                <div className="font-bold  text-2xl text-[red]">04:30</div>
                 <div>
-                  <p className="font-semibold text-[#111827]">Hacking Begins</p>
-                  <p className="text-sm text-[#6b7280]">Start building your solution</p>
+                  <p className="font-bold text-xl text-[black]">Prize & Awards</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Receive awards from guests</p>
                 </div>
               </div>
               <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
-                <div className="font-semibold text-[#f59e0b]">01:00</div>
+                <div className="font-bold  text-2xl text-[red]">06:00</div>
                 <div>
-                  <p className="font-semibold text-[#111827]">Lunch Break</p>
-                  <p className="text-sm text-[#6b7280]">Refuel and network</p>
-                </div>
-              </div>
-              <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
-                <div className="font-semibold text-[#f59e0b]">05:00</div>
-                <div>
-                  <p className="font-semibold text-[#111827]">Mentoring & Pitch Coaching</p>
-                  <p className="text-sm text-[#6b7280]">Guidance from industry experts</p>
-                </div>
-              </div>
-              <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
-                <div className="font-semibold text-[#f59e0b]">06:30</div>
-                <div>
-                  <p className="font-semibold text-[#111827]">Submission Deadline</p>
-                  <p className="text-sm text-[#6b7280]">Final submissions required</p>
-                </div>
-              </div>
-              <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
-                <div className="font-semibold text-[#f59e0b]">07:00</div>
-                <div>
-                  <p className="font-semibold text-[#111827]">Project Presentations & Awards</p>
-                  <p className="text-sm text-[#6b7280]">Showcase your work and celebrate</p>
+                  <p className="font-bold text-xl text-[black]">Program End</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Thanks all to participate</p>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Themes */}
-          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-[#111827]">Potential Themes</h2>
-            <div className="mt-6 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-lg border border-[#fcd34d] bg-amber-50 p-4">
-                <p className="font-semibold text-[#111827]">🌍 Sustainability</p>
-                <p className="text-sm text-[#6b7280]">Solutions for environmental challenges</p>
-              </div>
-              <div className="rounded-lg border border-[#fcd34d] bg-amber-50 p-4">
-                <p className="font-semibold text-[#111827]">🏥 HealthTech</p>
-                <p className="text-sm text-[#6b7280]">Innovative healthcare solutions</p>
-              </div>
-              <div className="rounded-lg border border-[#fcd34d] bg-amber-50 p-4">
-                <p className="font-semibold text-[#111827]">📚 EdTech</p>
-                <p className="text-sm text-[#6b7280]">Revolutionizing education</p>
-              </div>
-              <div className="rounded-lg border border-[#fcd34d] bg-amber-50 p-4">
-                <p className="font-semibold text-[#111827]">🚀 Open Innovation</p>
-                <p className="text-sm text-[#6b7280]">Any innovative idea</p>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Sidebar */}
         <div className="space-y-6">
           {/* Registration Card */}
-          <div className="rounded-2xl border border-[#f59e0b] bg-gradient-to-br from-amber-50 to-amber-100 p-6 shadow-lg">
-            <h3 className="text-xl font-bold text-[#f59e0b]">Register Your Team</h3>
+          <div className=" w-[500px] rounded-2xl border border-[#1e3a8a] bg-gradient-to-br from-blue-50 to-blue-100 p-7 shadow-lg">
+            <h3 className="text-3xl font-bold text-[#1e3a8a]">Ready to Compete?</h3>
             <div className="mt-6 space-y-3">
-              <button className="w-full rounded-full bg-[#f59e0b] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#d97706]">
-                Register Now
+              <button className="w-full rounded-full bg-orange-600 px-6 py-3 text-base font-bold text-lg text-white transition hover:bg-blue-700">
+                Register Team
               </button>
-              <button className="w-full rounded-full border-2 border-[#f59e0b] px-6 py-3 text-base font-semibold text-[#f59e0b] transition hover:bg-amber-50">
-                Volunteer
+              <button className="w-full rounded-full bg-orange-600 px-6 py-3 text-base font-bold text-lg text-white transition hover:bg-blue-700">
+                Join as Volunteer
               </button>
             </div>
-            <p className="mt-4 text-xs text-[#6b7280]">Last seats filling up! Register before June 25.</p>
           </div>
 
-          {/* Quick Info */}
-          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-lg">
-            <h3 className="text-lg font-bold text-[#111827]">Quick Details</h3>
-            <ul className="mt-4 space-y-3 text-sm">
+          {/* Key Info */}
+          <div className=" w-[500px] rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-lg">
+            <h3 className="text-3xl font-bold text-[#1e3a8a]">Key Information</h3>
+            <ul className="mt-4 space-y-3 text-xl">
               <li className="flex items-center gap-2">
-                <span className="text-lg">👥</span>
-                <span className="text-[#6b7280]">Team Size: 2-4 members</span>
+                <span className="text-2xl">💰</span>
+                <span className=" text-2xl font-bold text-[black]">Registration Fee: 200 taka/team</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-lg">💰</span>
-                <span className="text-[#6b7280]">Free registration</span>
+                <span className="text-2xl">🎯</span>
+                <span className=" text-2xl font-bold text-[black]">Category: Competition (Offline)</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-lg">🏆</span>
-                <span className="text-[#6b7280]">Total Prize: $2000</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="text-lg">🍕</span>
-                <span className="text-[#6b7280]">Meals & snacks provided</span>
+                <span className="text-2xl">📍</span>
+                <span className=" text-2xl font-bold text-[black]">Location: CUET IT Incubator</span>
               </li>
             </ul>
           </div>
 
           {/* Prizes */}
-          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-lg">
-            <h3 className="text-lg font-bold text-[#111827]">Prize Pool</h3>
-            <ul className="mt-4 space-y-3">
-              <li className="flex justify-between text-sm font-semibold">
-                <span className="text-[#6b7280]">🥇 1st Prize</span>
-                <span className="text-[#f59e0b]">$1000</span>
+          <div className=" w-[500px] rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-lg">
+            <h3 className="text-3xl font-bold text-[#1e3a8a]">Prizes</h3>
+            <ul className="mt-4 space-y-5 ">
+              <li className="flex justify-between text-sm">
+                <span className=" text-2xl font-bold text-[black]">🥇 1st Place</span>
+                <span className="text-2xl font-bold text-[black]">14,000 taka</span>
               </li>
-              <li className="flex justify-between text-sm font-semibold">
-                <span className="text-[#6b7280]">🥈 2nd Prize</span>
-                <span className="text-[#f59e0b]">$600</span>
+              <li className="flex justify-between text-sm">
+                <span className="text-2xl font-bold text-[black]">🥈 2nd Place</span>
+                <span className="text-2xl font-bold text-[black]">12,000 taka</span>
               </li>
-              <li className="flex justify-between text-sm font-semibold">
-                <span className="text-[#6b7280]">🥉 3rd Prize</span>
-                <span className="text-[#f59e0b]">$400</span>
+              <li className="flex justify-between text-sm">
+                <span className="text-2xl font-bold text-[black]">🥉 3rd Place</span>
+                <span className="text-2xl font-bold text-[black]">10,000 taka</span>
+              </li>
+              <li className="flex justify-between text-sm">
+                <span className="text-2xl font-bold text-[black]">🥉 4th Place</span> 
+                <span className="text-2xl font-bold text-[black]">8,000 taka</span>
               </li>
             </ul>
-          </div>
-
-          {/* Judges */}
-          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-lg">
-            <h3 className="text-lg font-bold text-[#111827]">Judges</h3>
-            <div className="mt-4 space-y-3 text-sm">
-              <p className="text-[#6b7280]">Industry experts from leading tech companies</p>
-              <p className="text-xs text-[#9ca3af]">Judging criteria: Innovation, Feasibility, Impact, Presentation</p>
-            </div>
           </div>
         </div>
       </div>
@@ -210,4 +214,4 @@ const HackathonPage = () => {
   );
 };
 
-export default HackathonPage;
+export default ProgrammingContestPage;

@@ -23,12 +23,12 @@ export const events = [
   },
   {
     id: 3,
-    title: 'Hackathon',
+    title: 'Campus Hackathon',
     club: 'Robotics Club',
     date: 'July 1, 2026',
-    time: '9:00 AM - 8:00 PM',
-    venue: 'Innovation Hub',
-    registrationDeadline: 'June 25, 2026',
+    time: '9:00 AM - 6:00 PM',
+    venue: 'CUET IT Incubator',
+    registrationDeadline: 'June 20, 2026',
     description: 'A full-day hackathon event where teams collaborate to build innovative solutions. Prizes, mentorship, and networking opportunities await all participants.',
   },
   {
@@ -57,11 +57,11 @@ const ClubEventsPage = () => {
       </div>
 
       {/* Events Grid */}
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
         {events.map((event) => (
           <div
             key={event.id}
-            className="flex h-80 flex-col rounded-3xl border border-[#e5e7eb] bg-white shadow-lg transition-all hover:shadow-2xl hover:-translate-y-2"
+            className="w-full flex h-80 flex-col rounded-3xl border border-[#e5e7eb] bg-orange-100 shadow-lg transition-all hover:shadow-2xl hover:-translate-y-2"
           >
             {/* Card Content */}
 <div className="flex h-[290px] flex-col items-center text-center p-6">
@@ -70,13 +70,13 @@ const ClubEventsPage = () => {
     {event.title}
   </h3>
 
-  <p className="mt-3 text-xl font-semibold text-[#1e3a8a]">
+  <p className="mt-3 text-xl font-bold text-[#1e3a8a]">
     Organized by
     <br />
     {event.club}
   </p>
 
-  <p className="mt-4 text-lg font-medium text-gray-500">
+  <p className="mt-4 text-lg font-bold text-xl text-gray-500">
     Registration Deadline
   </p>
 
