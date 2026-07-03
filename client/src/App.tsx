@@ -3,7 +3,10 @@ import logo from '../../logo.png';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ClubEventsPage from './pages/ClubEventsPage';
-import EventDetailPage from './pages/EventDetailPage';
+import ProgrammingContestPage from './pages/events/ProgrammingContestPage';
+import WebDevelopmentWorkshopPage from './pages/events/WebDevelopmentWorkshopPage';
+import HackathonPage from './pages/events/HackathonPage';
+import TechSeminarPage from './pages/events/TechSeminarPage';
 import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
@@ -52,7 +55,10 @@ function AppShell() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/club-events" element={<ClubEventsPage />} />
-          <Route path="/event/:eventId" element={<EventDetailPage />} />
+          <Route path="/event/1" element={<ProgrammingContestPage />} />
+          <Route path="/event/2" element={<WebDevelopmentWorkshopPage />} />
+          <Route path="/event/3" element={<HackathonPage />} />
+          <Route path="/event/4" element={<TechSeminarPage />} />
           <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
         </Route>
 
