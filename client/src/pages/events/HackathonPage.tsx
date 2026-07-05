@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const ProgrammingContestPage = () => {
+const HackathonPage = () => {
   return (
     <div className="space-y-12 py-12">
       {/* Header */}
@@ -60,12 +60,12 @@ Learn from industry experts, meet like-minded innovators, and showcase your crea
 
           {/* Contest Details */}
           <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
-            <h2 className="text-3xl font-bold text-[#1e3a8a]">Contest Format</h2>
+            <h2 className="text-3xl font-bold text-[#1e3a8a]">Event Format</h2>
             <ul className="mt-6 space-y-4">
               <li className="flex gap-3">
                 <span className="text-xl">🏆</span>
                 <div>
-                  <p className="font-bold text-xl text-[#111827]">Contest Type</p>
+                  <p className="font-bold text-xl text-[#111827]">Event Type</p>
                   <p className=" font-semibold text-xl text-[Crimson]">Team-wise </p>
                 </div>
               </li>
@@ -214,4 +214,4 @@ Learn from industry experts, meet like-minded innovators, and showcase your crea
   );
 };
 
-export default ProgrammingContestPage;
+export default HackathonPage;

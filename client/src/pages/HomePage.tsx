@@ -5,46 +5,59 @@ import SectionCard from '../components/ui/SectionCard';
 
 const modules = [
   {
-    title: 'Club Programs',
-    description: 'Discover clubs, join events, volunteer, and manage registrations from one place.',
-    badge: 'Community',
-    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80',
-  },
+  title: 'Club & Intra University Events',
+  description: 'Discover clubs, join events, volunteer, and manage registrations from one place.',
+  badge: 'Community',
+  badgeColor: 'bg-gradient-to-r from-orange-500 to-red-500',
+  image: '/club.jpg',
+},
   {
     title: 'Jobs & Internships',
     description: 'Browse curated opportunities with deadlines, filters, and direct application links.',
     badge: 'Career',
-    image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80',
+      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+
+    image: '/job.jpg',
   },
   {
     title: 'Scholarships & Research',
     description: 'Explore funding, research roles, TA and RA opportunities for students.',
     badge: 'Academics',
-    image: 'https://images.unsplash.com/photo-1559757175-57004f4ff736?auto=format&fit=crop&w=900&q=80',
+      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+
+    image: '/research.jpg',
   },
   {
     title: 'Emergency Services',
     description: 'Fast access to medical schedules, blood donation drives, and emergency contacts.',
     badge: 'Support',
-    image: 'https://images.unsplash.com/photo-1584467735874-8cb0863ed818?auto=format&fit=crop&w=900&q=80',
+      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+
+    image: 'emergency.png',
   },
   {
     title: 'Transport',
     description: 'Track routes, schedules, notices, and future-ready transport updates.',
     badge: 'Mobility',
-    image: 'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?auto=format&fit=crop&w=900&q=80',
+      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+
+    image: 'bus.png',
   },
   {
     title: 'News & Updates',
     description: 'Stay current with announcements, university news, and club notices.',
     badge: 'Updates',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=80',
+      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+
+    image: 'news.jpg',
   },
   {
     title: 'Nation & Inter university event',
     description: 'Discover national and inter-university events, competitions, and collaboration opportunities.',
     badge: 'Events',
-    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80',
+      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+
+    image: 'national.png',
   },
 ];
 
@@ -61,14 +74,14 @@ const HomePage = () => {
       <section className="rounded-[2rem] border border-[#e5e7eb] bg-gradient-to-br from-[#1e3a8a] via-[#3b82f6] to-[#10b981] p-8 text-white shadow-2xl">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-2xl">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/20 px-3 py-1 text-sm font-medium backdrop-blur">
-              <FaBell /> Student welfare platform
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-black/20 px-3 py-1 text-xl font-semibold text-black-200 backdrop-blur">
+              <FaBell /> Student Welfare & Opportunity Platform
             </div>
-            <h1 className="text-4xl font-bold leading-tight sm:text-5xl">Campus Connect keeps every student opportunity in one place.</h1>
-            <p className="mt-4 text-lg text-indigo-50">Explore events, jobs, scholarships, emergency help, transport, and updates from a single student-friendly dashboard.</p>
+            <h1 className="text-6xl text-orange-500 font-bold leading-tight sm:text-5xl">Everything a student needs, all in one place.</h1>
+            <p className="mt-4 text-3xl font-bold text-white ">Campus Connect brings together club events, internships, scholarships, emergency services, transport, and university updates in one smart student platform.</p>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="/login" className="rounded-full bg-white px-5 py-3 font-semibold text-[#1e3a8a] shadow hover:bg-[#f8fafc]">Login</a>
-              <a href="/register" className="rounded-full border border-white/70 px-5 py-3 font-semibold text-white hover:bg-white/10">Create Account</a>
+              <a href="/login" className=" rounded-full bg-orange-600 px-12 py-4 text-base font-bold text-xl text-white transition hover:bg-blue-700">Get Started</a>
+              <a href="/register" className=" rounded-full bg-orange-600 px-12 py-4 text-base font-bold text-xl text-white transition hover:bg-blue-700">Explore Modules</a>
             </div>
           </div>
           <div className="w-full lg:max-w-[420px]">
@@ -103,11 +116,11 @@ const HomePage = () => {
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {modules.map((module) => (
             <Link
-              key={module.title}
-              to={module.title === 'Club Programs' ? '/club-events' : '#'}
-              className="group block"
-            >
-              <SectionCard title={module.title} description={module.description} badge={module.badge} image={module.image} />
+  key={module.title}
+  to={module.title === 'Club & Intra University Events' ? '/club-events' : '#'}
+  className="group block"
+>
+              <SectionCard title={module.title} description={module.description} badge={module.badge} badgeColor={module.badgeColor} image={module.image} />
             </Link>
           ))}
         </div>
