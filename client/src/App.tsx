@@ -27,14 +27,14 @@ function AppShell() {
       <header className="sticky top-0 z-20 border-b border-[#e5e7eb] bg-white/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Campus Connect logo" className="h-10 w-10 rounded-full object-cover shadow" />
-            <Link to="/" className="text-xl font-black tracking-tight text-[#1e3a8a] transition hover:text-[#142a5e]">
+            <img src={logo} alt="Campus Connect logo" className="h-12 w-13 rounded-full object-cover shadow" />
+            <Link to="/" className="text-3xl font-black  text-[#1e3a8a] transition hover:text-orange-600">
               Campus Connect
             </Link>
           </div>
-          <nav className="flex items-center gap-2 text-sm font-medium">
-            <Link to="/" className="rounded-full px-3 py-2 text-[#6b7280] transition hover:bg-[#f8fafc] hover:text-[#1f2937]">Home</Link>
-            <Link to="/about" className="rounded-full px-3 py-2 text-[#6b7280] transition hover:bg-[#f8fafc] hover:text-[#1f2937]">About</Link>
+          <nav className="flex items-center gap-2 text-xl font-semibold text-blue-600">
+            <Link to="/" className="rounded-full px-4 py-3 text-[#1e3a8a]  bg-orange-300 transition hover:bg-[#7CFC00] hover:bg-[#7CFC00]">Home</Link>
+            <Link to="/about" className="rounded-full px-4 py-3 text-[#1e3a8a]  bg-orange-300 transition hover:bg-[#7CFC00] hover:bg-[#7CFC00]">About</Link>
             {user ? (
               <>
                 <Link to="/dashboard" className="rounded-full bg-[#10b981] px-4 py-2 text-white transition hover:bg-[#0f9f6f]">Dashboard</Link>
@@ -42,8 +42,8 @@ function AppShell() {
               </>
             ) : (
               <>
-                <Link to="/login" className="rounded-full border border-[#e5e7eb] px-4 py-2 text-[#1f2937] transition hover:bg-[#f8fafc]">Login</Link>
-                <Link to="/register" className="rounded-full border border-[#e5e7eb] px-4 py-2 text-[#1f2937] transition hover:bg-[#f8fafc]">Register</Link>
+                <Link to="/login" className="rounded-full border border-[#e5e7eb] px-4 py-2 bg-orange-300 text-[#1f2937] transition hover:bg-[#7CFC00]">Login</Link>
+                <Link to="/register" className="rounded-full border border-[#e5e7eb] px-4 py-2 bg-orange-300 text-[#1f2937] transition hover:bg-[#7CFC00]">Register</Link>
               </>
             )}
           </nav>

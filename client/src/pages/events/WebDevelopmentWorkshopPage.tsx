@@ -6,12 +6,12 @@ const WebDevelopmentWorkshopPage = () => {
       {/* Header */}
       <div className="flex items-center justify-between">
         <div>
-          <h1 className="text-5xl font-black text-[#10b981]">Web Development Workshop</h1>
-          <p className="mt-2 text-xl text-[#6b7280]">Master modern web development</p>
+          <h1 className="text-5xl font-black text-[coral]">Web Development Workshop</h1>
+          <p className="mt-2 text-2xl font-bold text-[black]">Master modern web development</p>
         </div>
         <Link
           to="/club-events"
-          className="inline-flex items-center justify-center rounded-full border border-[#10b981] bg-white px-6 py-2.5 text-sm font-semibold text-[#10b981] transition hover:bg-emerald-50"
+         className="inline-flex items-center justify-center rounded-full border border-[black] bg-white px-9 py-2.5 text-2xl font-bold text-[coral] transition hover:bg-orange -50"
         >
           ← Back
         </Link>
@@ -21,137 +21,182 @@ const WebDevelopmentWorkshopPage = () => {
         {/* Main Content */}
         <div className="lg:col-span-2 space-y-8">
           {/* Event Card */}
-          <div className="rounded-2xl border border-[#d1fae5] bg-gradient-to-br from-emerald-50 to-white p-8 shadow-lg">
-            <div className="mb-6 border-b border-[#10b981] pb-6">
-              <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Organized by</p>
-              <p className="mt-2 text-3xl font-bold text-[#10b981]">Career Club</p>
+          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
+            <div className="mb-6 border-b border-[#e5e7eb] pb-6">
+              <p className="text-2xl font-bold  tracking-wider text-[black]">Organized by</p>
+              <p className="mt-2 text-4xl font-bold text-[#1e3a8a]">Computer club</p>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
+             <div className="grid gap-6 sm:grid-cols-2">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Date</p>
-                <p className="mt-2 text-xl font-bold text-[#111827]">June 22, 2026</p>
+                <p className="text-xl font-semibold  tracking-wider text-[black]">Date</p>
+                <p className="mt-2 text-2xl font-bold text-[Red]">June 25, 2026</p>
               </div>
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Time</p>
-                <p className="mt-2 text-xl font-bold text-[#111827]">1:00 PM - 4:00 PM</p>
+                <p className="text-xl font-semibold  tracking-wider text-[black]">Time</p>
+                <p className="mt-2 text-2xl font-bold text-[red]">09:00 AM - 03:00 PM</p>
               </div>
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Venue</p>
-                <p className="mt-2 text-xl font-bold text-[#111827]">Tech Lab 3</p>
+                <p className="text-xl font-semibold  tracking-wider text-[black]">Venue</p>
+                <p className="mt-2 text-2xl font-bold text-[red]">CUET IT Incubator</p>
               </div>
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wider text-[#6b7280]">Registration Deadline</p>
-                <p className="mt-2 text-xl font-bold text-[#111827]">June 18, 2026</p>
+                <p className="text-xl font-semibold  tracking-wider text-[black]">Registration Deadline</p>
+                <p className="mt-2 text-2xl font-bold text-[red]">June 15, 2026</p>
               </div>
             </div>
           </div>
 
           {/* Description */}
           <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-[#111827]">Workshop Overview</h2>
-            <p className="mt-4 leading-relaxed text-[#4b5563]">
-              Learn modern web development practices with hands-on projects. This comprehensive workshop covers HTML, CSS, 
-              JavaScript, and popular frameworks. Perfect for beginners and intermediate developers looking to enhance their 
-              web development skills. Our expert instructors will guide you through practical exercises and real-world projects.
+            <h2 className="text-3xl font-bold text-[#1e3a8a]">About This Event</h2>
+            <p className="mt-4 leading-relaxed  text-2xl font-semibold text-[black]">
+             Learn modern web development practices with hands-on projects. This comprehensive
+workshop covers HTML, CSS, JavaScript, and popular frameworks. Perfect for beginners and
+intermediate developers looking to enhance their web development skills. Our expert
+instructors will guide you through practical exercises and real-world projects.
             </p>
           </div>
 
-          {/* Curriculum */}
+          {/* Speakers */}
           <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-[#111827]">Workshop Curriculum</h2>
-            <div className="mt-6 space-y-4">
-              <div className="rounded-lg border-l-4 border-[#10b981] bg-emerald-50 p-4">
-                <p className="font-semibold text-[#111827]">🎯 Session 1: HTML & CSS Fundamentals (1:00 - 1:45 PM)</p>
-                <p className="mt-2 text-sm text-[#6b7280]">Build a strong foundation with semantic HTML and modern CSS techniques</p>
+            <h2 className="text-3xl font-bold text-[#1e3a8a]">Meet Our Guest</h2>
+            <div className="mt-6 space-y-6">
+              <div className="flex gap-4 border-l-4 border-[#8b5cf6] bg-purple-50 p-4">
+                <div className="h-16 w-16 rounded-lg bg-[#8b5cf6] flex-shrink-0"><img src="/man.jpg" alt="Alex Chen" className="h-full w-full rounded-lg object-cover" /></div>
+                <div>
+                  <p className="font-bold text-2xl  text-red-600">Anik Barua</p>
+                  <p className="text-lg font-bold text-[#8b5cf6]">Senior Developer  </p>
+                  <p className="mt-2 text-lg font-semibold text-black">10+ years in software development</p>
+                </div>
               </div>
-              <div className="rounded-lg border-l-4 border-[#10b981] bg-emerald-50 p-4">
-                <p className="font-semibold text-[#111827]">⚡ Session 2: JavaScript Essentials (1:45 - 2:30 PM)</p>
-                <p className="mt-2 text-sm text-[#6b7280]">Master JavaScript fundamentals and DOM manipulation</p>
+
+              <div className="flex gap-4 border-l-4 border-[#8b5cf6] bg-purple-50 p-4">
+                <div className="h-16 w-16 rounded-lg bg-[#8b5cf6] flex-shrink-0"><img src="/women.jpg" alt="Maya Patel" className="h-full w-full rounded-lg object-cover" /></div>
+                <div>
+                  <p className="font-bold text-2xl  text-red-600">Abida Muntahina</p>
+                  <p className="text-lg font-bold text-[#8b5cf6]">Senior Developer </p>
+                  <p className="mt-2 text-lg font-semibold text-black">CEO of TechStartup Inc</p>
+                </div>
               </div>
-              <div className="rounded-lg border-l-4 border-[#10b981] bg-emerald-50 p-4">
-                <p className="font-semibold text-[#111827]">🚀 Session 3: Frameworks & Best Practices (2:30 - 4:00 PM)</p>
-                <p className="mt-2 text-sm text-[#6b7280]">Explore React/Vue and industry best practices with live coding demo</p>
-              </div>
+
+              
             </div>
           </div>
 
-          {/* Requirements */}
+          {/* Topics */}
           <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
-            <h2 className="text-2xl font-bold text-[#111827]">What You Need</h2>
-            <ul className="mt-4 space-y-3">
-              <li className="flex gap-3">
-                <span className="text-lg">✓</span>
-                <span className="text-[#6b7280]">Laptop with a code editor (VS Code recommended)</span>
+            <h2 className="text-3xl font-bold text-[#1e3a8a]">Topics to be Covered</h2>
+            <ul className="mt-6 text-xl font-bold text-black space-y-3">
+              <li className="flex gap-3 rounded-lg bg-orange-100 p-3">
+                <span className="text-lg">🎯</span>
+                <span className="text-[#6b7280]"><strong>Build a strong foundation with semantic HTML and modern CSS techniques
+</strong> </span>
               </li>
-              <li className="flex gap-3">
-                <span className="text-lg">✓</span>
-                <span className="text-[#6b7280]">Basic knowledge of HTML and CSS</span>
+              <li className="flex gap-3 rounded-lg bg-blue-100 p-3">
+                <span className="text-lg">💡</span>
+                <span className="text-[#6b7280]"><strong>Industry Trends:</strong>Master JavaScript fundamental and DOM manipulation
+ </span>
               </li>
-              <li className="flex gap-3">
-                <span className="text-lg">✓</span>
-                <span className="text-[#6b7280]">Node.js installed</span>
+              <li className="flex gap-3 rounded-lg bg-orange-100 p-3">
+                <span className="text-lg">📈</span>
+                <span className="text-[#6b7280]"><strong>Explore React/Vue and industry best practices with live coding demo
+</strong>h</span>
               </li>
-              <li className="flex gap-3">
-                <span className="text-lg">✓</span>
-                <span className="text-[#6b7280]">Enthusiasm to learn!</span>
+              <li className="flex gap-3 rounded-lg bg-blue-100 p-3">
+                <span className="text-lg">🤝</span>
+                <span className="text-[#6b7280]"><strong>Networking:</strong> Direct interaction with tech professionals</span>
+              </li>
+              <li className="flex gap-3 rounded-lg bg-orange-100 p-3">
+                <span className="text-lg">❓</span>
+                <span className="text-[#6b7280]"><strong>Q&A Session:</strong> Ask anything to our expert panelists</span>
               </li>
             </ul>
           </div>
+
+          {/* Agenda */}
+          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-8 shadow-lg">
+            <h2 className="text-3xl font-bold text-[#1e3a8a]">Event Schedule</h2>
+            <div className="mt-6 space-y-4">
+              <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
+                <div className="font-bold  text-2xl text-[red]">09:00</div>
+                <div>
+                  <p className="font-bold text-xl text-[black]">Event start</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Check-in and take your seat</p>
+                </div>
+              </div>
+              <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
+                <div className="font-bold  text-2xl text-[red]">11:00</div>
+                <div>
+                  <p className="font-bold text-xl text-[black]">Tea Break</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Take a break and refresh your mind</p>
+                </div>
+              </div>
+              <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
+                <div className="font-bold  text-2xl text-[red]">01:00</div>
+                <div>
+                  <p className="font-bold text-xl text-[black]">Lunch Break</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Enjoy a quick meal and network with peers</p>
+                </div>
+              </div>
+             
+              <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
+                <div className="font-bold  text-2xl text-[red]">02:00</div>
+                <div>
+                  <p className="font-bold text-xl text-[black]">Event Resume</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Continue with the main session</p>
+                </div>
+              </div>
+              <div className="flex gap-4 border-l-4 border-[#f59e0b] bg-amber-50 p-4">
+                <div className="font-bold  text-2xl text-[red]">03:00</div>
+                <div>
+                  <p className="font-bold text-xl text-[black]">Program End</p>
+                  <p className="text-lg font-bold text-[#6b7280]">Thanks all to participate</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
 
         {/* Sidebar */}
         <div className="space-y-6">
           {/* Registration Card */}
-          <div className="rounded-2xl border border-[#10b981] bg-gradient-to-br from-emerald-50 to-emerald-100 p-6 shadow-lg">
-            <h3 className="text-xl font-bold text-[#10b981]">Join the Workshop</h3>
+          <div className=" w-[500px] rounded-2xl border border-[#1e3a8a] bg-gradient-to-br from-blue-50 to-blue-100 p-7 shadow-lg">
+            <h3 className="text-3xl font-bold text-[#1e3a8a]">Want to Secure Your Goal ?</h3>
             <div className="mt-6 space-y-3">
-              <button className="w-full rounded-full bg-[#10b981] px-6 py-3 text-base font-semibold text-white transition hover:bg-[#059669]">
-                Register Now
+              <button className="w-full rounded-full bg-orange-600 px-6 py-3 text-base font-bold text-xl text-white transition hover:bg-blue-700">
+                Register 
               </button>
-              <button className="w-full rounded-full border-2 border-[#10b981] px-6 py-3 text-base font-semibold text-[#10b981] transition hover:bg-emerald-50">
-                Volunteer
+              <button className="w-full rounded-full bg-orange-600 px-6 py-3 text-base font-bold text-xl text-white transition hover:bg-blue-700">
+                Join as Volunteer
               </button>
             </div>
           </div>
 
-          {/* Key Info */}
-          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-lg">
-            <h3 className="text-lg font-bold text-[#111827]">Quick Facts</h3>
-            <ul className="mt-4 space-y-3 text-sm">
+        <div className=" w-[500px] rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-lg">
+            <h3 className="text-3xl font-bold text-[#1e3a8a]">Key Information</h3>
+            <ul className="mt-4 space-y-3 text-xl">
               <li className="flex items-center gap-2">
-                <span className="text-lg">👥</span>
-                <span className="text-[#6b7280]">Max 50 participants</span>
+                <span className="text-xl">👥</span>
+                <span className=" text-xl font-bold text-[black]">Open to all students</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-lg">📚</span>
-                <span className="text-[#6b7280]">3 hours hands-on</span>
+                <span className="text-xl">💰</span>
+                <span className=" text-xl font-bold text-[black]">Free Registration</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-lg">🎓</span>
-                <span className="text-[#6b7280]">Certificate included</span>
+                <span className="text-xl">📍</span>
+                <span className=" text-xl font-bold text-[black]">Location: CUET IT Incubator</span>
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-lg">💻</span>
-                <span className="text-[#6b7280]">Offline at Tech Lab 3</span>
+                <span className="text-xl">⏰</span>
+                <span className=" text-xl font-bold text-[black]">Duration: 6 Hours</span>
               </li>
             </ul>
           </div>
 
-          {/* Instructor */}
-          <div className="rounded-2xl border border-[#e5e7eb] bg-white p-6 shadow-lg">
-            <h3 className="text-lg font-bold text-[#111827]">Your Instructor</h3>
-            <div className="mt-4">
-              <div className="flex gap-4">
-                <div className="h-12 w-12 rounded-full bg-[#10b981]"></div>
-                <div>
-                  <p className="font-semibold text-[#111827]">Sarah Johnson</p>
-                  <p className="text-xs text-[#6b7280]">Senior Web Developer</p>
-                </div>
-              </div>
-              <p className="mt-3 text-xs text-[#6b7280]">10+ years experience in web development with expertise in React and modern tooling</p>
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>

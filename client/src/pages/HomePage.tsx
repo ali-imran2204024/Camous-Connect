@@ -62,10 +62,38 @@ const modules = [
 ];
 
 const highlights = [
-  { icon: FaGraduationCap, title: 'Student-Centered', text: 'Built for welfare, engagement, and daily student life support.' },
-  { icon: FaBriefcase, title: 'Career Ready', text: 'Access internships, campus hiring, and professional opportunities.' },
-  { icon: FaHeartbeat, title: 'Support Access', text: 'Emergency and wellbeing help with a simple, reliable experience.' },
-  { icon: FaBus, title: 'Campus Mobility', text: 'Transport schedules and route visibility in one place.' },
+  {
+    icon: FaGraduationCap,
+    title: 'Student-Centered',
+    text: 'Built for welfare, engagement, and daily student life support.',
+    bgColor: 'bg-blue-50',
+    iconColor: 'text-blue-600 border-blue-600',
+    hoverColor: 'hover:bg-blue-100',
+  },
+  {
+    icon: FaBriefcase,
+    title: 'Career Ready',
+    text: 'Access internships, campus hiring, and professional opportunities.',
+    bgColor: 'bg-green-50',
+    iconColor: 'text-green-600 border-green-600',
+    hoverColor: 'hover:bg-green-100',
+  },
+  {
+    icon: FaHeartbeat,
+    title: 'Support Access',
+    text: 'Emergency and wellbeing help with a simple, reliable experience.',
+    bgColor: 'bg-red-50',
+    iconColor: 'text-red-600 border-red-600',
+    hoverColor: 'hover:bg-red-100',
+  },
+  {
+    icon: FaBus,
+    title: 'Campus Mobility',
+    text: 'Transport schedules and route visibility in one place.',
+    bgColor: 'bg-orange-50',
+    iconColor: 'text-orange-600 border-orange-600',
+    hoverColor: 'hover:bg-orange-100',
+  },
 ];
 
 const HomePage = () => {
@@ -81,7 +109,7 @@ const HomePage = () => {
             <p className="mt-4 text-3xl font-bold text-white ">Campus Connect brings together club events, internships, scholarships, emergency services, transport, and university updates in one smart student platform.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <a href="/login" className=" rounded-full bg-orange-600 px-12 py-4 text-base font-bold text-xl text-white transition hover:bg-blue-700">Get Started</a>
-              <a href="/register" className=" rounded-full bg-orange-600 px-12 py-4 text-base font-bold text-xl text-white transition hover:bg-blue-700">Explore Modules</a>
+              <a href="/register" className=" rounded-full bg-orange-600 px-12 py-4 text-base font-bold text-xl text-white transition hover:bg-blue-700">Join With Us</a>
             </div>
           </div>
           <div className="w-full lg:max-w-[420px]">
@@ -90,28 +118,59 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        {highlights.map((item, index) => {
-          const Icon = item.icon;
-          return (
-            <div key={index} className="rounded-2xl border border-[#e5e7eb] bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md">
-              <div className="mb-3 inline-flex rounded-xl bg-[#eff6ff] p-3 text-[#1e3a8a]">
-                <Icon size={18} />
-              </div>
-              <h3 className="text-lg font-semibold text-[#1f2937]">{item.title}</h3>
-              <p className="mt-2 text-sm text-[#6b7280]">{item.text}</p>
-            </div>
-          );
-        })}
-      </section>
+      <section className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+  {highlights.map((item, index) => {
+    const Icon = item.icon;
 
-      <section className="rounded-[2rem] border border-[#e5e7eb] bg-white p-6 shadow-sm">
+    return (
+      <div
+        key={index}
+        className={`
+          rounded-3xl
+          border
+          border-[#e5e7eb]
+          bg-SlateGray
+          p-6
+          shadow-md
+          transition-all
+          duration-500
+          hover:-translate-y-3
+          hover:scale-105
+          hover:shadow-2xl
+          ${item.hoverColor}
+        `}
+      >
+        <div
+          className={`
+            mb-4
+            inline-flex
+            rounded-2xl
+            p-4
+            ${item.bgColor}
+            ${item.iconColor}
+          `}
+        >
+          <Icon size={28} />
+        </div>
+
+        <h3 className={`text-2xl font-bold ${item.iconColor}`}>
+          {item.title}
+        </h3>
+
+        <p className="mt-3 text-base leading-relaxed text-[#4b5563] font-medium">
+          {item.text}
+        </p>
+      </div>
+    );
+  })}
+</section>
+
+      <section className="rounded-[2rem] border border-[#e5e7eb] bg-[#FFFAF0]  p-6 shadow-sm">
         <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#1e3a8a]">Core modules</p>
+            <p className="text-4xl font-bold   text-orange-600">Core modules</p>
             <h2 className="text-2xl font-bold text-[#1f2937]">Everything students need in one platform</h2>
           </div>
-          <p className="text-sm text-[#6b7280]">All major student welfare modules are organized in one body section for easy browsing.</p>
         </div>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {modules.map((module) => (

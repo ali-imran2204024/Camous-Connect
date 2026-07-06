@@ -26,8 +26,8 @@ const SectionCard = ({
         </div>
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-semibold text-[#111827]">{title}</h3>
-        <p className="mt-3 text-sm leading-6 text-[#4b5563]">{description}</p>
+        <h3 className="text-3xl font-bold text-orange-600">{title}</h3>
+        <p className="mt-3 text-xl leading-6 font-semibold text-blue-600">{description}</p>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ const ProgrammingContestPage = () => {
         </div>
         <Link
           to="/club-events"
-          className="inline-flex items-center justify-center rounded-full border border-[black] bg-white px-9 py-2.5 text-xl font-bold text-[coral] transition hover:bg-orange -50"
+          className="inline-flex items-center justify-center rounded-full border border-[black] bg-white px-9 py-2.5 text-2xl font-bold text-[coral] transition hover:bg-orange -50"
         >
           ← Back
         </Link>
