@@ -294,9 +294,7 @@ const ClubEventsPage = () => {
       </div>
     </div>
   </div>
- </div>
-
-        {/* Existing Clubs at CUET */}
+ </div>        {/* Existing Clubs at CUET */}
   <div className="mt-20">
      <div className="text-center">
       <h2 className="text-4xl font-black text-[#ED3207] sm:text-5xl">
@@ -419,7 +417,7 @@ const ClubEventsPage = () => {
             {club.name}
           </h3>
 
-          <div className="mt-5 space-y-2 text-xl text-left">
+          <div className="mt-5 space-y-2 text-2xl text-left">
             <p>
               <span className="font-bold text-[#ED3207]">
                 🌐 Website:

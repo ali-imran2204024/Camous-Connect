@@ -10,6 +10,8 @@ import TechSeminarPage from './pages/events/TechSeminarPage';
 import LoginPage from './pages/auth/LoginPage';
 import RegisterPage from './pages/auth/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
+import EmergencyServicesPage from './pages/EmergencyServicesPage';
+import PlaceholderPage from './pages/PlaceholderPage';
 import MainLayout from './layouts/MainLayout';
 import AuthLayout from './layouts/AuthLayout';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
@@ -55,6 +57,14 @@ function AppShell() {
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/club-events" element={<ClubEventsPage />} />
+          <Route path="/emergency-services" element={<EmergencyServicesPage />} />
+          <Route path="/national-events" element={<PlaceholderPage title="National & Inter-University Events" description="This module is being prepared. You will be able to explore competitions and collaboration opportunities here soon." />} />
+          <Route path="/scholarships" element={<PlaceholderPage title="Scholarships & Research" description="Scholarship and research opportunities will appear here soon." />} />
+          <Route path="/jobs" element={<PlaceholderPage title="Jobs & Internships" description="Career opportunities will be listed here soon." />} />
+          <Route path="/blood-donation" element={<PlaceholderPage title="Blood Donation & Emergency Support" description="This page is being prepared for urgent support and donation requests." />} />
+          <Route path="/lost-and-found" element={<PlaceholderPage title="Lost & Found" description="Lost and found items will be listed here soon." />} />
+          <Route path="/news" element={<PlaceholderPage title="News & Updates" description="Latest campus updates will be displayed here soon." />} />
+          <Route path="/transport" element={<PlaceholderPage title="Transport" description="Transport routes and schedules will be available here soon." />} />
           <Route path="/event/1" element={<ProgrammingContestPage />} />
           <Route path="/event/2" element={<WebDevelopmentWorkshopPage />} />
           <Route path="/event/3" element={<HackathonPage />} />

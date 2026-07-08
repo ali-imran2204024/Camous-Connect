@@ -5,60 +5,79 @@ import SectionCard from '../components/ui/SectionCard';
 
 const modules = [
   {
-  title: 'Club & Intra University Events',
-  description: 'Discover clubs, join events, volunteer, and manage registrations from one place.',
-  badge: 'Community',
-  badgeColor: 'bg-gradient-to-r from-orange-500 to-red-500',
-  image: '/club.jpg',
-},
-  {
-    title: 'Jobs & Internships',
-    description: 'Browse curated opportunities with deadlines, filters, and direct application links.',
-    badge: 'Career',
-      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
-
-    image: '/job.jpg',
-  },
-  {
-    title: 'Scholarships & Research',
-    description: 'Explore funding, research roles, TA and RA opportunities for students.',
-    badge: 'Academics',
-      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
-
-    image: '/research.jpg',
-  },
-  {
-    title: 'Emergency Services',
-    description: 'Fast access to medical schedules, blood donation drives, and emergency contacts.',
-    badge: 'Support',
-      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
-
-    image: 'emergency.png',
-  },
-  {
-    title: 'Transport',
-    description: 'Track routes, schedules, notices, and future-ready transport updates.',
-    badge: 'Mobility',
-      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
-
-    image: 'bus.png',
-  },
-  {
-    title: 'News & Updates',
-    description: 'Stay current with announcements, university news, and club notices.',
-    badge: 'Updates',
-      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
-
-    image: 'news.jpg',
+    title: 'Club & Intra University Events',
+    description: 'Discover clubs, join events, volunteer, and manage registrations from one place.',
+    badge: 'Community',
+    badgeColor: 'bg-gradient-to-r from-orange-500 to-red-500',
+    image: '/club.jpg',
+    route: '/club-events',
   },
   {
     title: 'Nation & Inter university event',
     description: 'Discover national and inter-university events, competitions, and collaboration opportunities.',
     badge: 'Events',
-      badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
-
+    badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
     image: 'national.png',
+    route: '/national-events',
   },
+  {
+    title: 'Scholarships & Research',
+    description: 'Explore funding, research roles, TA and RA opportunities for students.',
+    badge: 'Academics',
+    badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+    image: '/research.jpg',
+    route: '/scholarships',
+  },
+  {
+    title: 'Jobs & Internships',
+    description: 'Browse curated opportunities with deadlines, filters, and direct application links.',
+    badge: 'Career',
+    badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+    image: '/job.jpg',
+    route: '/jobs',
+  },
+  {
+    title: 'Emergency Services',
+    description: 'Fast access to medical schedules and emergency contacts.',
+    badge: 'Support',
+    badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+    image: 'em.png',
+    route: '/emergency-services',
+  },
+  {
+    title: 'Emergency Blood Donation Support',
+    description: 'Fast access to medical schedules and emergency contacts.',
+    badge: 'Support',
+    badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+    image: 'blood.jpg',
+    route: '/blood-donation',
+  },
+  {
+    title: 'Lost and Found',
+    description: 'Fast access to medical schedules and emergency contacts.',
+    badge: 'Support',
+    badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+    image: 'lf.png',
+    route: '/lost-and-found',
+  },
+  {
+    title: 'News & Updates',
+    description: 'Stay current with announcements, university news, and club notices.',
+    badge: 'Updates',
+    badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+    image: 'news.jpg',
+    route: '/news',
+  },
+  {
+    title: 'Transport',
+    description: 'Track routes, schedules, notices, and future-ready transport updates.',
+    badge: 'Mobility',
+    badgeColor: 'bg-gradient-to-r from-red-500 to-red-500',
+    image: 'bus.png',
+    route: '/transport',
+  },
+  
+  
 ];
 
 const highlights = [
@@ -173,15 +192,19 @@ const HomePage = () => {
           </div>
         </div>
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-          {modules.map((module) => (
-            <Link
-  key={module.title}
-  to={module.title === 'Club & Intra University Events' ? '/club-events' : '#'}
-  className="group block"
->
-              <SectionCard title={module.title} description={module.description} badge={module.badge} badgeColor={module.badgeColor} image={module.image} />
-            </Link>
-          ))}
+          {modules.map((module) => {
+            const targetPath = module.route ?? '#';
+
+            return (
+              <Link
+                key={module.title}
+                to={targetPath}
+                className="group block"
+              >
+                <SectionCard title={module.title} description={module.description} badge={module.badge} badgeColor={module.badgeColor} image={module.image} />
+              </Link>
+            );
+          })}
         </div>
       </section>
     </div>
